@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--
+Basic syntax is: $(selector).action()
+
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+Examples:
+
+$(this).hide() - hides the current element.
+
+$("p").hide() - hides all <p> elements.
+
+$(".test").hide() - hides ALL elements with class="test".
+
+$("#test").hide() - hides the element (not all) with id="test".
+-->
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--    <script src="../js/jquery-3.5.1.min.js"></script>-->
+    <script src="js/selectors.js"></script>
+    <title>First program</title>
+</head>
+<body>
+
+    <p>Select first para</p>
+    <p>Select Second para</p>
+    <button id="firstBtn">Hide First line</button>
+    <hr>
+
+    <p class="firstPara">Click me! I will disappear</p>
+    <p class="firstPara">Click me away!</p>
+    <p class="firstPara">Click me too!</p>
+    <hr>
+
+    <p id="secondPara">Click the button! We will disappear.</p>
+    <p id="secondPara">I will not disappear. Id should be unique</p>
+    <button id="secondParaBtn">Click me</button>
+    <hr>
+
+    <button id="allGoneBtn">Boom! Vanish</button>
+    <hr>
+
+    <p class="classAndTag">class and tag selector 1</p>
+    <p class="classAndTag">class and tag selector 2</p>
+    <button id="classAndTag">Click Click</button>
+    <hr>
+
+    <p>List 1:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+    <p>List 2:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+    <p>List 3:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+    <button id="listBtn1">Click me to hide item</button>
+    <hr>
+
+    <p><a href="https://boibhandar.com" target="_blank">Boi Bhandar</a> </p>
+    <a href="https://inflack.com">Inflack</a> <br>
+    <button id="hrefBtn">Hide all href</button>
+    <button id="hrefValueBtn">Hide href based on value</button>
+    <hr>
+
+    <table border="1" width="300px">
+        <tr>
+            <th>Employee</th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td>Misbah</td>
+            <td>Samsung</td>
+        </tr>
+        <tr>
+            <td>Akib</td>
+            <td>InsignIn</td>
+        </tr>
+        <tr>
+            <td>Abeer</td>
+            <td>Lotto</td>
+        </tr>
+        <tr>
+            <td>Hasan</td>
+            <td>Inflack</td>
+        </tr>
+        <tr>
+            <td>Sifat</td>
+            <td>Pedrello</td>
+        </tr>
+    </table>
+    <button id="tableOddEven">Odd/Even</button>
+    <hr>
+
+</body>
+</html>
