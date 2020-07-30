@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 //TODO: Selects the first <p> element
     $("#firstBtn").click(function () {
-        $("p:first").hide();
+        $("p:first").hide("slow");
         //$("p:last").hide();
     });
 
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 //TODO: Selectors for list
     $("#listBtn1").click(function () {
-        //$("ul li:first").hide();
+        //$("ul li:first").hide("slow");
         //$("ul:last li:first").hide();
 
         // TODO: Same ai 2 ta
@@ -63,11 +63,11 @@ $(document).ready(function () {
 
 //TODO: Table tr odd/even
     $("#tableOddEven").click(function () {
-        //$("tr:odd").hide();
+        //$("tr:odd").hide("slow");
         //$("tr:even").hide();
 
         //$("tr td:odd").hide();
-        //$("tr td:even").hide();
+        //$("tr td:even").hide("slow");
 
         $("tr:odd").css("background-color", "red");
         $("tr:even").css("font-size", "30px");
