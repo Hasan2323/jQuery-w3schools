@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!--    The jQuery animate() method is used to create custom animations.-->
+
+<!--    Syntax:-->
+<!--    $(selector).animate({params},speed,callback);-->
+
+<!--    The required params parameter defines the CSS properties to be animated.-->
+
+<!--    The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.-->
+
+<!--    The optional callback parameter is a function to be executed after the animation completes.-->
+
+<!--    #################################################################################################-->
+<!--    #                                                                                               #-->
+<!--    #         By default, all HTML elements have a static position, and cannot be moved.            #-->
+<!--    #         To manipulate the position, "Remember to first set the CSS POSITION property"         #-->
+<!--    #         of the element to "relative, fixed, or absolute!"                                     #-->
+<!--    #                                                                                               #-->
+<!--    #################################################################################################-->
+
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--    <script src="../js/jquery-3.5.1.min.js"></script>-->
+    <script src="js/animation.js"></script>
+    <title>Animation</title>
+    <style>
+        div {
+            padding: 5px;
+            background-color: #e5eecc;
+            text-align: center;
+            border: 1px solid black;
+        }
+        #btn1 {
+            width: 690px;
+            font-weight: bold;
+        }
+        #content1 {
+            padding: 30px;
+            font-size: 30px;
+            display: block;
+            width: 70px;
+            position: absolute;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="btn1">Click to slide down panel</div>
+    <div id="content1">Allahu-Akbar!</div>
+    <br><br>
+
+</body>
+</html>
