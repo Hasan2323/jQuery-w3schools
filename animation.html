@@ -33,7 +33,7 @@
             text-align: center;
             border: 1px solid black;
         }
-        #btn1, #btn2, #btn3 {
+        #btn1, #btn2, #btn3, #btn4, #btn5, #btn6 {
             width: 690px;
             font-weight: bold;
         }
@@ -57,8 +57,29 @@
     <br><br>
 
     <div id="btn3">Click to slide - (Multi task separately) panel</div>
-    <div id="content3" style="background:#98bf21;height:100px;width:200px;position:absolute;">Allahu-Akbar!</div>
+    <div id="content3" style="background:#98bf21;height:100px;width:200px;position:relative;">Allahu-Akbar!</div>
     <br><br>
+
+    <div id="btn4">Click for animate() - Using Relative Values (+=, -=)</div>
+    <div id="content4" style="background:#98bf21;height:100px;width:100px;position:relative;">Allahu-Akbar!</div>
+    <br><br>
+
+    <!--    jQuery animate() - Uses Queue Functionality-->
+    <!--    By default, jQuery comes with queue functionality for animations.-->
+
+    <!--    This means that if you write multiple animate() calls after each other, jQuery creates an "internal" queue with these method calls. Then it runs the animate calls ONE by ONE.-->
+
+    <!--    So, if you want to perform different animations after each other, we take advantage of the queue functionality:-->
+
+    <div id="btn5">Click for animate() - Uses Queue Functionality</div>
+    <div id="content5" style="background:#98bf21;height:100px;width:100px;position:relative;">Allahu-Akbar!</div>
+    <br><br>
+
+    <div id="btn6">Click for animate() - Using Pre-defined Values ("show"/"hide"/"toggle")</div>
+    <div id="content6" style="background:#98bf21;height:100px;width:100px;position:relative;">Allahu-Akbar!</div>
+    <br><br>
+
+
 
 </body>
 </html>

@@ -24,8 +24,40 @@ $(document).ready(function (){
 
     $("#btn3").click(function (){
         var mts = $("#content3");  // mts = multiple task separately
-        mts.animate({left: "498px"},2000);
+        mts.animate({left: "490px"},2000);
         mts.animate({height: "200px"}, 2000);
         mts.animate({fontSize: "3em"}, 2000);
     });
+
+    // animate() - Using Relative Values
+    $("#btn4").click(function (){
+        $("#content4").animate({
+            left: '440px',
+            height: '+=30px',
+            width: '+=30px'
+        }, "slow");
+    });
+
+    // animate() - Using Pre-defined Values ("show", "hide", or "toggle")
+    $("#btn6").click(function (){
+        $("#content6").animate({
+            //left: '440px',
+            //width: 'hide'
+            height: 'toggle',
+        }, "slow");
+    });
+
+    // animate() - Uses Queue Functionality
+    $("#btn5").click(function (){
+        var dance = $("#content5");
+        dance.animate({height: '300px', opacity: '0.4'}, "slow");
+        dance.animate({width: '600px', opacity: '0.8'}, "slow");
+        dance.animate({height: '100px', opacity: '0.4'}, "slow");
+        dance.animate({width: '100px', opacity: '0.8'}, "slow");
+    });
+
+
+
+
+
 });
