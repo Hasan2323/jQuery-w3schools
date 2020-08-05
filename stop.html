@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--    <script src="../js/jquery-3.5.1.min.js"></script>-->
+    <script src="js/stop.js"></script>
+    <title>jQuery stop</title>
+    <style>
+        #flip1, #panel1, #flip2, #panel3 {
+            border: 1px solid black;
+            text-align: center;
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+<!--The jQuery stop() method is used to stop an animation or effect before it is finished.-->
+
+<!--The stop() method works for all jQuery effect functions, including sliding, fading and custom animations.-->
+
+<!--Syntax: $(selector).stop(stopAll,goToEnd); -->
+
+<!--The optional stopAll parameter specifies whether also the animation queue should be cleared or not.
+Default is false, which means that only the active animation will be stopped, allowing any queued animations to be performed afterwards.-->
+
+<!--The optional goToEnd parameter specifies whether or not to complete the current animation immediately. Default is false.-->
+
+<!--So, by default, the stop() method kills the current animation being performed on the selected element.-->
+<body>
+    <button id="btn1">Stop Sliding</button>
+    <div id="flip1" style="width: 800px;padding: 5px">Click to slide down Panel</div>
+    <div id="panel1" style="padding: 50px;display: none;width: 710px;font-size: 30px">Allah-hu-Akbar!</div>
+    <br>
+    <hr>
+
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="stopAll">Stop All</button>
+    <button id="stopButFinish">Stop but finish</button>
+    <p>The "Start" button starts the animation.</p>
+    <p>The "Stop" button stops the current active animation, but allows the queued animations to be performed afterwards.</p>
+    <p>The "Stop all" button stops the current active animation and clears the
+        animation queue; so all animations on the element is stopped.</p>
+    <p>The "Stop but finish" rushes through the current active animation, then it stops.</p>
+    <div id="panel2" style="background-color: #555;color: white;height:100px;width:250px;position:relative;">Allah-hu-Akbar!</div>
+    <br>
+    <hr>
+
+    <button id="btn2">Stop Sliding</button>
+    <div id="flip2" style="width: 800px;padding: 5px">Click to slide Toggle Panel</div>
+    <div id="panel3" style="padding: 50px;display: none;width: 710px;font-size: 30px">Allah-hu-Akbar!</div>
+    <br>
+    <hr>
+
+
+</body>
+</html>
