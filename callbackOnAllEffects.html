@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--    <script src="../js/jquery-3.5.1.min.js"></script>-->
+    <title>Callback on All effects</title>
+</head>
+<body>
+
+    <button id="withCallback">Click me to hide (with callback)</button>
+    <p id="text1">
+        Muhammad Saimon,<br>
+        4216, Chittagong.
+    </p>
+
+    <br>
+    <hr>
+
+    <button id="withOutCallback">Click me to hide (without callback)</button>
+    <p id="text2">
+        Muhammad Hasan,<br>
+        4216, Chittagong.
+    </p>
+
+    <script>
+        $(document).ready(function (){
+            $("#withCallback").click(function (){
+                $("#text1").hide("slow", function () {
+                    alert("it's hidden");
+                });
+            });
+
+            $("#withOutCallback").click(function (){
+                $("#text2").hide("slow");
+                alert("It's hidden.")
+            });
+
+        });
+    </script>
+</body>
+</html>
