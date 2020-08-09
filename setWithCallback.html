@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--    <script src="../js/jquery-3.5.1.min.js"></script>-->
+    <script src="js/setWithCallback.js"></script>
+    <title>jQuery Set with Callback</title>
+</head>
+<body>
+
+<!--
+A Callback Function for text(), html(), and val()
+All of the three jQuery methods above: text(), html(), and val(), also come with a callback function.
+The callback function has two parameters: the index of the current element in the list of elements selected and
+the original (old) value. You then return the string you wish to use as the new value from the function.
+-->
+
+    <p id="para1">Simple paragraph.</p>
+
+    <p id="para2"><b>Bold</b> paragraph.</p>
+
+    <p><a href="https://www.w3schools.com" title="W3Schools." target="_blank" id="w3s">w3Schools</a></p>
+
+    <button id="setText">set text</button>
+    <button id="setHtml">set html</button>
+    <button id="setAttr">Set Attribute Value</button>
+
+</body>
+</html>
