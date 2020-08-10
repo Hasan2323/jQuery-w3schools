@@ -29,7 +29,11 @@ $(function (){
         //let attrValue = $("#w3s").attr("target");
 
         alert(attrValue);
+    });
 
+    //removeAttr()
+    $("#removeAttr").click(function () {
+        $("table").removeAttr("border style")
     });
 
 
