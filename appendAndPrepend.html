@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--    <script src="../js/jquery-3.5.1.min.js"></script>-->
+    <script src="js/appendAndPrepend.js"></script>
+    <title>jQuery Add - Append and Prepend</title>
+</head>
+<body>
+
+    <div>
+        <p>
+            Add New HTML Content <br>
+            We will look at four jQuery methods that are used to add new content: <br>
+
+            <b>append()</b> - Inserts content at the end of the selected elements <br>
+            <b>prepend()</b> - Inserts content at the beginning of the selected elements <br>
+            <b>after()</b> - Inserts content after the selected elements <br>
+            <b>before()</b> - Inserts content before the selected elements <br>
+        </p>
+    </div>
+    <hr>
+    <p id="para1">My name is</p>
+    <p id="para2">Mein name ist</p>
+
+    <ol>
+        <li>List item 5</li>
+        <li>List item 6</li>
+        <li>List item 7</li>
+    </ol>
+
+    <button id="addText">Add text</button>
+    <button id="addList1">Add list (Append)</button>
+    <button id="addList2">Add list (Prepend)</button>
+
+    <br><br>
+    <hr>
+    <br>
+
+    <p id="multipleAppend">Full Name : </p>
+    <p id="multiplePrepend"> Saimon.</p>
+
+    <button onclick="appendText()">Append text</button>
+    <button onclick="prependText()">Prepend text</button>
+
+</body>
+</html>
