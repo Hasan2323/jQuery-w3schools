@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--    <script src="../js/jquery-3.5.1.min.js"></script>-->
+    <script src="js/removeAndEmpty.js"></script>
+    <title>jQuery - Remove and Empty</title>
+</head>
+<body>
+    <div class="div1" style="height:80px;width:600px;background-color:gray; color: white; border: 1px solid black">
+        <b>Remove Elements/Content</b><br>
+        To remove elements and content, there are mainly two jQuery methods: <br>
+
+        <b>remove()</b> - Removes the selected element (and its child elements) <br>
+        <b>empty()</b> - Removes the child elements from the selected element
+    </div>
+    <hr>
+    <br>
+
+    <div class="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;">
+
+        This is some text in the div.
+        <p>This is a paragraph in the div.</p>
+        <p>This is another paragraph in the div.</p>
+
+    </div>
+    <br>
+
+    <button id="btn1">Remove div element</button>
+    <button id="btn2">Empty div element</button>
+
+    <hr>
+    <br>
+<!--    ###############################################################################################-->
+
+    <div>
+        <b>Filter the Elements to be Removed</b><br>
+        The jQuery remove() method also accepts one parameter, which allows you to filter the elements to be removed.
+        <br>
+        The parameter can be any of the jQuery selector syntaxes.
+    </div>
+
+    <p>This is a paragraph.</p>
+    <p class="test" style="color: red">This is p element with class="test".</p>
+    <p class="test" style="color: red">This is p element with class="test".</p>
+    <p class="demo" style="color: red">This is p element with class="demo".</p>
+
+    <button id="btn3">Remove all p elements with class="test"</button>
+    <button id="btn4">Remove all p elements with class="test" and class="demo"</button>
+</body>
+</html>
